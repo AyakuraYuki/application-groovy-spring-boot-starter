@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>cc.ayakurayuki</groupId>
+  <artifactId>application-groovy-spring-boot-starter</artifactId>
+  <version>1.0-SNAPSHOT</version>
+
+  <properties>
+    <spring.boot.starter.dependency.version>2.4.4</spring.boot.starter.dependency.version>
+    <lombok.version>1.18.18</lombok.version>
+    <project.encoding>UTF-8</project.encoding>
+    <project.build.sourceEncoding>${project.encoding}</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>${project.encoding}</project.reporting.outputEncoding>
+    <java.version>1.8</java.version>
+    <maven.compiler.source>${java.version}</maven.compiler.source>
+    <maven.compiler.target>${java.version}</maven.compiler.target>
+  </properties>
+
+  <developers>
+    <developer>
+      <name>Ayakura Yuki</name>
+      <url>https://github.com/AyakuraYuki</url>
+      <timezone>+8</timezone>
+      <email>AyakuraYuki@users.noreply.github.com</email>
+    </developer>
+  </developers>
+
+  <scm>
+    <url>https://github.com/AyakuraYuki/application-groovy-spring-boot-starter/tree/main</url>
+    <connection>scm:git:https://github.com/AyakuraYuki/application-groovy-spring-boot-starter.git</connection>
+    <developerConnection>scm:git:https://github.com/AyakuraYuki/application-groovy-spring-boot-starter.git</developerConnection>
+  </scm>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-configuration-processor</artifactId>
+        <version>${spring.boot.starter.dependency.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-autoconfigure</artifactId>
+        <version>${spring.boot.starter.dependency.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
+        <version>${lombok.version}</version>
+        <scope>provided</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-configuration-processor</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-autoconfigure</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <finalName>application-groovy-spring-boot-starter</finalName>
+
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-scm-plugin</artifactId>
+          <version>1.11.2</version>
+          <configuration>
+            <connectionType>connection</connectionType>
+          </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-scm-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>
