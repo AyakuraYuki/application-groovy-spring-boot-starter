@@ -9,7 +9,8 @@
   <version>1.0-SNAPSHOT</version>
 
   <properties>
-    <spring.boot.starter.dependency.version>2.4.4</spring.boot.starter.dependency.version>
+    <spring.boot.starter.dependency.version>1.5.22.RELEASE</spring.boot.starter.dependency.version>
+    <groovy.version>3.0.7</groovy.version>
     <lombok.version>1.18.18</lombok.version>
     <project.encoding>UTF-8</project.encoding>
     <project.build.sourceEncoding>${project.encoding}</project.build.sourceEncoding>
@@ -47,6 +48,11 @@
         <version>${spring.boot.starter.dependency.version}</version>
       </dependency>
       <dependency>
+        <groupId>org.codehaus.groovy</groupId>
+        <artifactId>groovy</artifactId>
+        <version>${groovy.version}</version>
+      </dependency>
+      <dependency>
         <groupId>org.projectlombok</groupId>
         <artifactId>lombok</artifactId>
         <version>${lombok.version}</version>
@@ -63,6 +69,10 @@
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-autoconfigure</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.codehaus.groovy</groupId>
+      <artifactId>groovy</artifactId>
     </dependency>
     <dependency>
       <groupId>org.projectlombok</groupId>

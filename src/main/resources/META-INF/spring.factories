@@ -1,2 +1,2 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  cc.ayakurayuki.springframework.boot.autoconfigure.ApplicationGroovyAutoConfigure
+org.springframework.boot.env.PropertySourceLoader=\
+  cc.ayakurayuki.springframework.boot.env.ApplicationGroovyPropertySourceLoader

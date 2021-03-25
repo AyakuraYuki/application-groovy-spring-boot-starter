@@ -1,0 +1,2 @@
+Version: 1.0-SNAPSHOT
+The first usable version, which can only read configuration Map and String.

@@ -1,5 +1,6 @@
 .idea/
 out/
+target/
 .idea_modules/
 *.iml
 *.ipr
